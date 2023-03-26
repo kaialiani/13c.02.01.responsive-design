@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --light: #f3f4f2;
+  --dark: #242020;
+  --red: #bc1142;
+  --blue: #0059a1;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  margin: auto;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+#container_nav {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--light);
+  transition: top 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.hide-nav {
+  top: -250px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav img {
+  width: 3rem;
+}
+
+nav button {
+  margin-right: 5%;
+}
+
+#container_nav a img {
+  margin-left: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  transition: 0.2s ease-in;
+  text-decoration-color: var(--red);
+}
+
+nav button {
+  padding: 1rem;
+  border-radius: 50px;
+  border: 2px solid var(--red);
+  background-color: #f6f7f300;
+  margin-top: 1rem;
+  color: var(--red);
+  font-family: "Unbounded", cursive;
+  font-weight: 600;
+}
+
+header img {
+  width: 16rem;
+}
+
+header {
+  display: flex;
+  height: 120vh;
+  align-items: center;
+  gap: 12%;
+  width: 90%;
+  margin: auto;
+}
+
+header button {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--red);
+  margin-top: 2rem;
+  color: var(--light);
+  font-size: 1.1rem;
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-family: "Unbounded", cursive;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.2em;
+  font-family: "Unbounded", cursive;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-block-start: 0em;
+}
+
+#advantages {
+  width: 90%;
+  margin: auto;
+}
+
+.advantages_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.3rem;
+  row-gap: 2.3rem;
+  margin-top: 2rem;
+}
+
+.advantages_card {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px #8b8b8b4b;
+}
+
+.advantages_card_text {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.advantages_card img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.product_container {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+#product {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.product_graphics img {
+  width: 200%;
+  margin: auto;
+}
+
+.image {
+  flex-basis: 20%;
+}
+
+.product_text article {
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  background-color: var(--red);
+  color: var(--light);
+  padding-bottom: 2rem;
+}
+
+.highlight h2 {
+  width: 90%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.highlight_small_cards {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.highlight_small_cards div {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  width: 45%;
+  border-radius: 10px;
+  color: var(--dark);
+  text-align: center;
+}
+
+.highlight button {
+  padding: 1rem;
+  border-radius: 50px;
+  border: 2px solid var(--light);
+  background-color: #ffffff00;
+  color: var(--light);
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.image img {
+  width: 100%;
+}
+
+.text {
+  flex-basis: 80%;
+}
+
+/* form */
+
+#contact {
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+#contact_form {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.form_group_message {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  font-size: 1.2rem;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.form_group_button {
+  display: flex;
+  margin: auto;
+  grid-column: 1 / span 2;
+}
+
+.form_group_button button {
+  padding: 1rem;
+  border-radius: 50px;
+  border: 2px solid var(--red);
+  background-color: #f6f7f300;
+  margin-top: 1rem;
+  color: var(--red);
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.1rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid var(--dark);
+  background-color: #f6f7f300;
+  margin-top: 1rem;
+  color: var(--dark);
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+textarea {
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid var(--dark);
+  background-color: #f6f7f300;
+  margin-top: 1rem;
+  color: var(--dark);
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* team */
+
+#team {
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.team_container {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+#team img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 150px;
+}
+
+#team article {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* footerino */
+
+footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+footer img {
+  width: 2rem;
+}
+
+footer section {
+  display: flex;
+  gap: 15%;
+}
+
+footer ul {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
+footer h3 {
+  margin-block-end: 0em;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+button:hover {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+  cursor: pointer;
+}
+
+.outline_hover:hover {
+  color: var(--red);
+  -webkit-text-fill-color: var(
+    --light
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--red);
+  cursor: crosshair;
+}
+
+@media screen and (max-width: 900px) {
+  #container_nav {
+    padding-top: 2.4rem;
+    display: block;
+    align-items: start;
+    z-index: 2;
+  }
+
+  #container_nav a {
+    margin-left: 3.6rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  #container_nav a img {
+    margin-left: 0;
+  }
+
+  ul {
+    padding-inline-start: 0;
+    flex-direction: column;
+    margin-top: 2.6rem;
+    gap: 0;
+    line-height: 1.2rem;
+  }
+
+  header {
+    flex-direction: column;
+    height: 45vh;
+    margin-top: 22rem;
+    width: 86%;
+    margin-left: 3rem;
+  }
+
+  header img {
+    display: none;
+  }
+  #advantages {
+    width: 85%;
+  }
+  .advantages_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .product_container {
+    flex-direction: column;
+  }
+  .product_container img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .highlight_small_cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .team_container {
+    flex-direction: column;
+  }
+
+  #team img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 150px;
+  }
+
+  #team article {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  #team li {
+    list-style: none;
+  }
+
+  .highlight {
+    text-align: center;
+  }
+
+  #contact_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .product_text {
+    width: 90%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .form_group_button button {
+    padding: 1rem;
+    border-radius: 50px;
+    border: 2px solid var(--red);
+    background-color: #f6f7f300;
+    margin-top: 1rem;
+    color: var(--red);
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 600;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 0.8rem;
+  }
+}

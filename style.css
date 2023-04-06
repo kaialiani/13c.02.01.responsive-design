@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --light: #f3f4f2;
   --dark: #242020;
@@ -504,6 +508,21 @@ button:hover {
     width: 80%;
     margin: auto;
     margin-top: 4rem;
+    flex-direction: column;
+  }
+
+  footer section {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer section div ul {
+    margin-block-start: 0.6em;
+  }
+
+  footer section div ul li {
+    margin-block-start: 0.2em;
   }
 
   .product_text {
@@ -513,6 +532,11 @@ button:hover {
 
   h1 {
     font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .form_group_button button {
